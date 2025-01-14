@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spreadsheets</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/12.2.0/math.js"></script>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+    
+   
+
+        <div class="page-actions-cont">
+            <div class="page-action">File</div>
+            <div class="page-action selected-page-action">Home</div>
+            <div class="page-action">Insert</div>
+            <div class="page-action">Layout</div>
+            <div class="page-action">Help</div>
+        </div>
+        <div class="cellprop-actions-cont">
+            <span class="material-icons copy">content_copy</span>
+            <span class="material-icons cut">content_cut</span>
+            <span class="material-icons paste">content_paste</span>
+            <select class="font-family-prop">
+                <option value="Arial">Arial</option>
+                <option value="Times New Roman">Times New Roman</option>
+                <!-- Additional options here -->
+            </select>
+            <select class="font-size-prop">
+                <option value="12px">12</option>
+                <option value="14px">14</option>
+                <!-- Additional options here -->
+            </select>
+            <span class="material-icons bold">format_bold</span>
+            <span class="material-icons italic">format_italic</span>
+            <span class="material-icons underline">format_underlined</span>
+            <div class="color-prop">
+                <span class="material-icons">format_color_text</span>
+                <input type="color" class="font-color-prop">
+            </div>
+            <div class="color-prop">
+                <span class="material-icons">format_color_fill</span>
+                <input type="color" class="BGcolor-prop">
+            </div>
+            <span class="material-icons download" id="download">cloud_download</span>
+            <span class="material-icons upload" id="upload">cloud_upload</span>
+        </div>
+        <div class="formula-actions-cont">
+            <input type="text" readonly class="address-bar">
+            <img class="formula-icon" src="https://img.icons8.com/ios/50/000000/formula-fx.png" />
+            <input type="text" class="formula-bar">
+            <button id="evaluate">Evaluate Formula</button>
+        </div>
+        
+        </div>
+       
+   
+    <canvas id="spreadsheet"></canvas>
+    <div id="selectedCellBorder"></div>
+    <div id="selectedCellFormula"></div>
+    <div id="selectedRange"></div>
+    <div contenteditable="true" id="textInput"></div>
+    <script src="app.js"></script>
+
+</body>
+
+</html>
+
+
+
