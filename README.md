@@ -8,7 +8,7 @@ This is a basic mimic of Google Sheets, created using HTML, CSS, and JavaScript.
 - Font styling (bold, italic).
 - Text and background color changes.
 - Formula bar for evaluating expressions.
-   -SUM, AVG, COUNT, MIN, MAX
+   -SUM, AVG, COUNT, MIN, MAX, TRIM, UPPER, LOWER
 
 ## Features
 1. **Toolbar**:
