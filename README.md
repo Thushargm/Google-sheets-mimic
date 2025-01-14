@@ -34,3 +34,4 @@ This is a basic mimic of Google Sheets, created using HTML, CSS, and JavaScript.
 
 ## How to Run
 1. Clone this repository:
+2. Run index.html
